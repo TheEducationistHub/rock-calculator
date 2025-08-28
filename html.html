@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>River Rock Calculator | Estimate Landscaping Rocks Needed</title>
+    <meta name="description" content="Free river rock calculator to estimate how much landscaping rock you need for your project. Calculate tons and cubic yards of river rocks needed.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>River Rock Calculator</h1>
+            <p>Quickly estimate how much river rock you need for your landscaping project</p>
+        </header>
+        
+        <div class="calculator">
+            <h2>Calculate River Rock Needs</h2>
+            <p>Enter your project dimensions to estimate the amount of river rock required:</p>
+            
+            <div class="input-group">
+                <div class="input-box">
+                    <label for="length">Length (feet)</label>
+                    <input type="number" id="length" min="0" step="0.1" placeholder="Enter length">
+                </div>
+                
+                <div class="input-box">
+                    <label for="width">Width (feet)</label>
+                    <input type="number" id="width" min="0" step="0.1" placeholder="Enter width">
+                </div>
+            </div>
+            
+            <div class="input-group">
+                <div class="input-box">
+                    <label for="depth">Depth (inches)</label>
+                    <input type="number" id="depth" min="0" step="0.1" placeholder="Enter depth" value="2">
+                </div>
+                
+                <div class="input-box">
+                    <label for="rock-size">Rock Size</label>
+                    <select id="rock-size">
+                        <option value="small">Small (0.5" - 1.5")</option>
+                        <option value="medium" selected>Medium (1.5" - 3")</option>
+                        <option value="large">Large (3" - 6")</option>
+                    </select>
+                </div>
+            </div>
+            
+            <div class="btn-group">
+                <button class="btn-calculate" id="calculate">Calculate</button>
+                <button class="btn-reset" id="reset">Reset</button>
+            </div>
+            
+            <div class="results" id="results">
+                <h3>Results</h3>
+                <div class="result-item">
+                    <span>Area:</span>
+                    <span class="result-value" id="area">0 sq ft</span>
+                </div>
+                <div class="result-item">
+                    <span>Volume:</span>
+                    <span class="result-value" id="volume">0 cubic feet</span>
+                </div>
+                <div class="result-item">
+                    <span>River Rock Needed:</span>
+                    <span class="result-value" id="rock-needed">0 tons</span>
+                </div>
+                <div class="result-item">
+                    <span>Approximate Cost:</span>
+                    <span class="result-value" id="cost">$0</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="credit">
+            <p>This calculator was inspired by the original at <a href="https://www.theeducationisthub.com/tools/river-rock-calculator/" target="_blank">The Educationist Hub</a></p>
+        </div>
+        
+        <div class="section">
+            <h2>About This River Rock Calculator</h2>
+            <p>This river rock calculator helps homeowners, landscapers, and DIY enthusiasts accurately estimate the amount of river rock needed for landscaping projects. Whether you're creating a dry river bed, designing a garden path, or adding decorative rock features, this tool takes the guesswork out of material estimation.</p>
+            <p>Our calculator uses standard industry formulas to provide accurate estimates based on your project's dimensions and the size of river rock you plan to use. It calculates both the weight in tons and approximate cost, helping you budget effectively for your landscaping project.</p>
+        </div>
+        
+        <div class="section">
+            <h2>How To Use This Calculator</h2>
+            <ol>
+                <li><strong>Measure your area:</strong> Determine the length and width of the area you want to cover with river rock (in feet).</li>
+                <li><strong>Determine depth:</strong> Decide how deep you want the rock layer to be (typically 2-4 inches for landscaping purposes).</li>
+                <li><strong>Select rock size:</strong> Choose the size of river rock you plan to use (small, medium, or large).</li>
+                <li><strong>Calculate:</strong> Click the calculate button to see how much river rock you need in tons and the estimated cost.</li>
+                <li><strong>Adjust as needed:</strong> You can modify any field and recalculate to compare options.</li>
+            </ol>
+            <p>For irregularly shaped areas, break them down into rectangular sections and calculate each separately, then add the results together.</p>
+        </div>
+        
+        <div class="section">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">How much does river rock typically cost?</div>
+                <p>River rock costs between $100 to $800 per ton, depending on the rock size, type, and your location. Larger rocks generally cost more than smaller ones. Delivery fees may apply for large quantities.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">How deep should I lay river rock for landscaping?</div>
+                <p>For most landscaping applications, a depth of 2-4 inches is recommended. This provides adequate coverage to prevent weed growth while allowing the rocks to settle properly. For pathways, use 3-4 inches, and for decorative purposes, 2 inches may be sufficient.</p>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Should I put anything under river rock?</div>
+                <p>Yes, it's recommended to use landscape fabric beneath river rock. This barrier helps prevent weeds from growing through while still allowing water drainage. For areas with poor drainage, you might also consider adding a layer of gravel before placing the fabric and river rock.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
